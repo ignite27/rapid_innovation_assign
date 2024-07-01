@@ -1,38 +1,188 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 10rem;
+  position: fixed;
+    top: 0;
+    width: 100%;
+};
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlinks-container ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  
+}
+.navlinks-container ul a{
+  font-size: 2.4rem;
+  color: #FFFDFA;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-section{
+  background: linear-gradient(35deg, rgb(6, 0, 151) 0%, rgb(130, 4, 255) 73%, rgb(193, 15, 255) 100%);
+}
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  background: linear-gradient(35deg, rgb(6, 0, 151) 0%, rgb(130, 4, 255) 73%, rgb(193, 15, 255) 100%);
+  justify-content: center;
+  padding: 4rem 10rem;
+  font-size: 2.4rem;
+  padding-top: 10rem;
+}
+
+.hero-section .right {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  gap: 2rem;
+  color: #FFFDFA;
+  padding-right: 14rem;
 }
 
-.App-link {
-  color: #61dafb;
+.right button {
+  background: yellow;
+  border: navajowhite;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ----------------------------- */
+.service-parent {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 3fr));
+  gap:2rem;
+  font-size: 1.5rem;
+  padding: 4rem 10rem;
+  position: relative;
 }
+
+.card-containr img {
+  width: 100%;
+}
+.card-containr h4 {
+  position: absolute;
+  bottom: 1rem;
+}
+
+/* ----------------------------------- */
+
+.category-parent{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  padding: 4rem 12rem;
+  gap: 3rem;
+  font-size: 2rem;
+  background-image: linear-gradient(90deg, rgb(213, 213, 216) 0%, rgb(213, 213, 216) 12%, rgb(213, 213, 216) 22%, rgb(213, 213, 216) 31%, rgb(213, 213, 216) 38%, rgb(213, 213, 216) 44%, rgb(213, 213, 216) 49%, rgb(210, 210, 213) 53%, rgb(210, 210, 213) 56%, rgb(209, 210, 214) 58%, rgb(209, 210, 214) 61%, rgb(209, 210, 214) 63%, rgb(209, 210, 214) 66%, rgb(209, 210, 214) 69%, rgb(209, 210, 214) 72%, rgb(209, 210, 214) 77%, rgb(207, 208, 211) 81%, rgb(207, 208, 211) 87%, rgb(207, 208, 211) 93%, rgb(207, 208, 211) 100%);
+}
+
+.footer-parent{
+  display:grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  padding: 4rem 12rem;
+  gap: 3rem;
+  font-size: 2rem;
+  background-image: linear-gradient(90deg, rgb(213, 213, 216) 0%, rgb(213, 213, 216) 12%, rgb(213, 213, 216) 22%, rgb(213, 213, 216) 31%, rgb(213, 213, 216) 38%, rgb(213, 213, 216) 44%, rgb(213, 213, 216) 49%, rgb(210, 210, 213) 53%, rgb(210, 210, 213) 56%, rgb(209, 210, 214) 58%, rgb(209, 210, 214) 61%, rgb(209, 210, 214) 63%, rgb(209, 210, 214) 66%, rgb(209, 210, 214) 69%, rgb(209, 210, 214) 72%, rgb(209, 210, 214) 77%, rgb(207, 208, 211) 81%, rgb(207, 208, 211) 87%, rgb(207, 208, 211) 93%, rgb(207, 208, 211) 100%);
+}
+
+
+/* -----------------------------*/
+.footer {
+  display: grid;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 4rem 10rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  font-size: 2rem;
+}
+
+
+.footer .col {
+  flex: 1; 
+}
+
+.footer h5 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px; 
+}
+
+
+.code-poetry {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* ---------------------- */
+.parentdiv{
+  /* background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.9573170731707317) 0%, rgba(30,34,105,1) 16%, rgba(56,67,172,0.9969512195121951) 47%, rgba(0,212,255,1) 100%);
+  background-color: #333; */
+display: flex;
+justify-content: center;
+align-items: flex-start;
+height: 500px;
+/* border: 2px solid red; */
+margin-top: 12rem;
+}
+.Taskdivs {
+  display: flex;
+  
+  height: 100%;
+
+
+  /* border: 2px solid black; */
+  width: 33%;
+  align-items: center;
+  justify-content: center;}
